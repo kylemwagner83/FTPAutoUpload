@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>582</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FTP Auto Upload</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="IPtextbox">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>36</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>36</y>
+      <width>52</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IP Address</string>
+    </property>
+    <property name="buddy">
+     <cstring>IPtextbox</cstring>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="usernameTextbox">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>86</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwordTextbox">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>116</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>86</y>
+      <width>48</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Username</string>
+    </property>
+    <property name="buddy">
+     <cstring>usernameTextbox</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>116</y>
+      <width>46</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Password</string>
+    </property>
+    <property name="buddy">
+     <cstring>passwordTextbox</cstring>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveConfigButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>148</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save FTP Config</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>60</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Port</string>
+    </property>
+    <property name="buddy">
+     <cstring>portTextbox</cstring>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="portTextbox">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>60</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="fileListWindow">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>31</y>
+      <width>341</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearButton">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>250</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear List</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addFilesButton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>250</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Files</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Configure FTP:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>10</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>File transfer list:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveFileButton">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>250</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save File List</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ftpUploadButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>220</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Upload Files</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>582</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>IPtextbox</tabstop>
+  <tabstop>portTextbox</tabstop>
+  <tabstop>usernameTextbox</tabstop>
+  <tabstop>passwordTextbox</tabstop>
+  <tabstop>saveConfigButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
